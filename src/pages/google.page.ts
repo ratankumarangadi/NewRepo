@@ -18,6 +18,6 @@ export class TestClass {
 
     async openControl() {
         this.page.locator(".card-body")
-            .filter({"has" : this.page.locator("h5:contains('Elements')")})
+            .filter({"has" : this.page.locator("h5:contains('Elements')")}).click()
     }
 }
