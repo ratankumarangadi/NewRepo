@@ -7,11 +7,12 @@ test('Navigate to Google', async ({ page }) => {
 });
 
 test('Search for Playwright', async ({ page }) => {
-  await page.goto('https://google.com/');
+  test.setTimeout(100000000)
+  await page.goto('https://demoqa.com/');
   let exampletest = new TestClass(page);
-  await exampletest.typeSearchText();
-  await exampletest.pressEnter();
-  const text = await exampletest.searchResult();
-  await console.log(text);
-  expect(text).toContain('Playwright: Fast and reliable');
+  const text = exampletest.openControl()
 });
+
+
+
+

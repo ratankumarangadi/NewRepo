@@ -16,8 +16,8 @@ export class TestClass {
         await this.page.keyboard.press('Enter');
     }
 
-    async searchResult() {
-         return this.page.innerText('//h3[contains(text(),"Playwright:")]')
-        return true
+    async openControl() {
+        this.page.locator(".card-body")
+            .filter({"has" : this.page.locator("h5:contains('Elements')")})
     }
 }
