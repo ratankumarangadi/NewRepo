@@ -4,8 +4,7 @@
   "description": "Playwright scripts",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:chromium": "playwright test --project=chromium"
+    "test": "playwright test"
   },
   "author": "",
   "license": "ISC",
