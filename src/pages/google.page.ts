@@ -17,7 +17,7 @@ export class TestClass {
     }
 
     async searchResult() {
-        // return this.page.innerText('//h3[contains(text(),"Playwright:")]')
+         return this.page.innerText('//h3[contains(text(),"Playwright:")]')
         return true
     }
 }
