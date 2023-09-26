@@ -1,18 +1,22 @@
 import { test, expect } from '@playwright/test';
-import { TestClass } from '../pages/google.page'; 
-test('Navigate to Google', async ({ page }) => {
-  await page.goto('https://google.com/');
-  const url = await page.url();
-  expect(url).toContain('google');
+import { TestClass } from '../pages/mainpage.page'; 
+
+/*
+test( "Open test demo page", async ({page}) => {
+  page.waitForTimeout(50000)
+  await page.goto('https://demoqa.com/')
+  await page.locator('title:has-text("DEMOQA")')
+  await expect(page).toHaveTitle("DEMOQA")
 });
 
-test('Search for Playwright', async ({ page }) => {
-  test.setTimeout(100000000)
+
+test('Go to elements page', async ({ page }) => {
+  page.waitForTimeout(5000000)
   await page.goto('https://demoqa.com/');
   let exampletest = new TestClass(page);
-  const text = exampletest.openControl()
+  await exampletest.openControl()
+  await page.locator(".main-header").blur
 });
 
-
-
+*/
 
